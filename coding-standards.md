@@ -47,13 +47,13 @@
 -	 For computed data (`SUM()` or `AVG()`) use the name you would give it were it a column defined in the schema.
 
 
-```sqlserver
+```sql
 SELECT FirstName AS fn
 FROM Staff AS s1
   JOIN Students AS s2 ON s2.MentorCode = s1.StaffNum;
 ```
 
-```sqlserver
+```sql
 SELECT SUM(s.MonitorTally) AS MonitorTotal
 FROM staff AS s;
 ```
